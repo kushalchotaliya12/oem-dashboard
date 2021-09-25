@@ -65,9 +65,9 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
         ],
+        remarks: '23-12-2020 Dispatch',
         status: 'Dispatched',
     },
     {
@@ -88,7 +88,6 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
             {
                 id: 2,
@@ -100,7 +99,6 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
             {
                 id: 3,
@@ -112,7 +110,6 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
             {
                 id: 4,
@@ -124,7 +121,6 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
             {
                 id: 5,
@@ -136,9 +132,9 @@ const orderTableData = [
                 engineer_initials: 'DC',
                 vendor_name: 'ARI',
                 part_status: 'Dispatch',
-                remarks: '23-12-2020 Dispatch',
             },
         ],
+        remarks: '23-12-2020 Dispatch',
         status: 'Dispatched',
     },
     {
@@ -210,6 +206,7 @@ const orderTableData = [
                 remarks: '23-12-2020 Dispatch',
             },
         ],
+        remarks: '23-12-2020 Dispatch',
         status: 'Dispatched',
     },
     {
@@ -281,6 +278,7 @@ const orderTableData = [
                 remarks: '23-12-2020 Dispatch',
             },
         ],
+        remarks: '23-12-2020 Dispatch',
         status: 'Dispatched',
     },
     {
@@ -352,6 +350,7 @@ const orderTableData = [
                 remarks: '23-12-2020 Dispatch',
             },
         ],
+        remarks: '23-12-2020 Dispatch',
         status: 'Dispatched',
     },
 ];

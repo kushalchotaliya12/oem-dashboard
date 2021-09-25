@@ -27,6 +27,7 @@ import AddBoxIcon from '@material-ui/icons/AddBox';
 import Dashboard from '../components/organisms/Dashboard';
 import OrderTable from '../components/organisms/OrderTable';
 import NewOrder from '../components/organisms/NewOrder';
+import InquiryTable from '../components/organisms/InquiryTable';
 
 const drawerWidth = 240;
 
@@ -82,6 +83,10 @@ const MainDrawer = (props) => {
         {
             title: 'New Order',
             logo: <AddBoxIcon />,
+        },
+        {
+            title: 'Inquiry Table',
+            logo: <ListIcon />,
         },
     ];
 
@@ -162,8 +167,10 @@ const MainDrawer = (props) => {
                     <Dashboard />
                 ) : component === 'Order Table' ? (
                     <OrderTable />
-                ) : (
+                ) : component === 'New Order' ? (
                     <NewOrder />
+                ) : (
+                    <InquiryTable />
                 )}
             </main>
         </div>

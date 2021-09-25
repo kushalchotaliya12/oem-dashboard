@@ -8,37 +8,38 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
-import orderTableData from '../../api/orderTableData';
-import { Dialog, IconButton } from '@material-ui/core';
+import { IconButton } from '@material-ui/core';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import OrderDetailsModal from '../atoms/OrderDetailsModal';
+import TableCollapsibleView from '../atoms/TableCollapsibleView';
+import inquiryTableData from '../../api/inquiryTableData';
+import InquiryTableCollapseView from '../atoms/InquiryTableCollapseView';
 
 const columns = [
-    { id: 'id', label: 'Id', minWidth: 70, align: 'center' },
-    { id: 'customer_name', label: 'Customer Name', minWidth: 170 },
-    { id: 'segment', label: 'Segment', minWidth: 100 },
+    { id: 'id', label: 'Id', minWidth: 50 },
+    { id: 'company_name', label: 'Company Name', minWidth: 170 },
+    { id: 'inquiry_description', label: 'Equipments', minWidth: 100 },
     {
-        id: 'purchase_order_no',
-        label: 'PO Number',
+        id: 'contact_person',
+        label: 'Contact Person',
         minWidth: 170,
         align: 'center',
     },
     {
-        id: 'purchase_order_date',
-        label: 'PO Date',
-        minWidth: 100,
+        id: 'location',
+        label: 'Location',
+        minWidth: 170,
         align: 'center',
     },
     {
-        id: 'payment_status',
-        label: 'Payment Status',
+        id: 'offer_value',
+        label: 'Offer Value',
         minWidth: 100,
         align: 'center',
     },
     {
         id: 'status',
-        label: 'Order Status',
+        label: 'Status',
         minWidth: 100,
         align: 'center',
     },
@@ -54,7 +55,7 @@ const subColumns = [
     { id: 'part_status', label: 'Part Status', minWidth: 100, align: 'center' },
 ];
 
-const rows = orderTableData;
+const rows = inquiryTableData;
 
 const useStyles = makeStyles({
     root: {
@@ -65,7 +66,7 @@ const useStyles = makeStyles({
     },
 });
 
-const OrderTable = () => {
+const InquiryTable = () => {
     const classes = useStyles();
     const [page, setPage] = React.useState(0);
     const [rowsPerPage, setRowsPerPage] = React.useState(12);
@@ -94,7 +95,7 @@ const OrderTable = () => {
                 <Table stickyHeader aria-label='sticky table'>
                     <TableHead>
                         <TableRow>
-                            {/* <TableCell /> */}
+                            <TableCell />
                             {columns.map((column) => (
                                 <TableCell
                                     key={column.id}
@@ -120,7 +121,7 @@ const OrderTable = () => {
                                             onClick={() => toggleRow(index)}
                                             style={{ cursor: 'pointer' }}
                                         >
-                                            {/* <TableCell>
+                                            <TableCell>
                                                 <IconButton
                                                     aria-label='expand row'
                                                     size='small'
@@ -132,7 +133,7 @@ const OrderTable = () => {
                                                         <KeyboardArrowDownIcon />
                                                     )}
                                                 </IconButton>
-                                            </TableCell> */}
+                                            </TableCell>
                                             {columns.map((column) => {
                                                 const value = row[column.id];
                                                 return (
@@ -150,19 +151,12 @@ const OrderTable = () => {
                                                 );
                                             })}
                                         </TableRow>
-                                        {/* <TableCollapsibleView
+                                        <InquiryTableCollapseView
                                             open={open}
                                             subColumns={subColumns}
                                             row={row}
                                             rowIndex={index}
-                                        /> */}
-                                        <Dialog
-                                            open={open === index}
-                                            onClose={() => toggleRow(index)}
-                                            maxWidth='md'
-                                        >
-                                            <OrderDetailsModal subColumns={subColumns} row={row} />
-                                        </Dialog>
+                                        />
                                     </>
                                 );
                             })}
@@ -182,4 +176,4 @@ const OrderTable = () => {
     );
 };
 
-export default OrderTable;
+export default InquiryTable;
