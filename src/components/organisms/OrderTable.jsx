@@ -9,9 +9,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
 import TableRow from '@material-ui/core/TableRow';
 import orderTableData from '../../api/orderTableData';
-import { Dialog, IconButton } from '@material-ui/core';
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import { Dialog } from '@material-ui/core';
 import OrderDetailsModal from '../atoms/OrderDetailsModal';
 
 const columns = [

@@ -1,15 +1,6 @@
 import { DialogContent, DialogContentText, DialogTitle } from '@material-ui/core';
 import React from 'react';
-import {
-    Box,
-    Collapse,
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableRow,
-    Typography,
-} from '@material-ui/core';
+import { Table, TableBody, TableCell, TableHead, TableRow } from '@material-ui/core';
 
 const OrderDetailsModal = (props) => {
     const { subColumns, row } = props;

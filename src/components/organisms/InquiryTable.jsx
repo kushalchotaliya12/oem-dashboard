@@ -11,7 +11,6 @@ import TableRow from '@material-ui/core/TableRow';
 import { IconButton } from '@material-ui/core';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
-import TableCollapsibleView from '../atoms/TableCollapsibleView';
 import inquiryTableData from '../../api/inquiryTableData';
 import InquiryTableCollapseView from '../atoms/InquiryTableCollapseView';
 
@@ -43,16 +42,6 @@ const columns = [
         minWidth: 100,
         align: 'center',
     },
-];
-
-const subColumns = [
-    { id: 'pending_part_name', label: 'Pending Part Name', minWidth: 170 },
-    { id: 'qty', label: 'Qty', minWidth: 50, align: 'center' },
-    { id: 'total_amount', label: 'Total Amount', minWidth: 100, align: 'center' },
-    { id: 'delivery_date', label: 'Delivery', minWidth: 100, align: 'center' },
-    { id: 'engineer_initials', label: 'Assigned', minWidth: 100, align: 'center' },
-    { id: 'vendor_name', label: 'Vendor', minWidth: 100, align: 'center' },
-    { id: 'part_status', label: 'Part Status', minWidth: 100, align: 'center' },
 ];
 
 const rows = inquiryTableData;
@@ -153,7 +142,6 @@ const InquiryTable = () => {
                                         </TableRow>
                                         <InquiryTableCollapseView
                                             open={open}
-                                            subColumns={subColumns}
                                             row={row}
                                             rowIndex={index}
                                         />

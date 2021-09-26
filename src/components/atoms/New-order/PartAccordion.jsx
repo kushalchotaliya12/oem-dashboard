@@ -36,6 +36,7 @@ const PartAccordion = (props) => {
     const { index } = props;
     const classes = useStyles();
     const [partStatus, setPartStatus] = useState();
+    const [quantity, setQuantity] = useState();
     return (
         <Accordion style={{ marginTop: 15 }}>
             <AccordionSummary
@@ -55,11 +56,22 @@ const PartAccordion = (props) => {
                             label='Part Name'
                             variant='standard'
                         />
-                        <TextField
-                            className={classes.textFieldInput}
-                            label='Quantity'
-                            variant='standard'
-                        />
+                        <FormControl className={[classes.formControl, classes.textFieldInput]}>
+                            <InputLabel>Quantity</InputLabel>
+                            <Select
+                                value={quantity}
+                                onChange={(e) => setQuantity(e.target.value)}
+                                className={classes.formControl}
+                            >
+                                {[...Array(50)].map((_, index) => {
+                                    return (
+                                        <MenuItem value={index + 1} index={index}>
+                                            {index + 1}
+                                        </MenuItem>
+                                    );
+                                })}
+                            </Select>
+                        </FormControl>
                         <TextField
                             className={classes.textFieldInput}
                             label='Total Amount'
@@ -78,7 +90,7 @@ const PartAccordion = (props) => {
                             label='Vendor Name'
                             variant='standard'
                         />
-                        <FormControl className={classes.formControl}>
+                        <FormControl className={[classes.formControl, classes.textFieldInput]}>
                             <InputLabel>Status</InputLabel>
                             <Select
                                 value={partStatus}

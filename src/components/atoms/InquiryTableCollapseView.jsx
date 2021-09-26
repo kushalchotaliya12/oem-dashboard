@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Collapse, TableCell, TableRow, Typography } from '@material-ui/core';
 
 const InquiryTableCollapseView = (props) => {
-    const { open, subColumns, row, rowIndex } = props;
+    const { open, row, rowIndex } = props;
     return (
         <TableRow>
             <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={8}>
