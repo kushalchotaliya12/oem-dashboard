@@ -1,11 +1,3 @@
-// import React from 'react';
-
-// const Dashboard = () => {
-//     return <h1>Dashboard</h1>;
-// };
-
-// export default Dashboard;
-
 import React, { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -28,7 +20,6 @@ import Dashboard from '../components/organisms/Dashboard';
 import OrderTable from '../components/organisms/OrderTable';
 import NewOrder from '../components/organisms/NewOrder';
 import InquiryTable from '../components/organisms/InquiryTable';
-import { FormControlLabel, FormGroup, Switch } from '@material-ui/core';
 
 const drawerWidth = 240;
 
@@ -71,11 +62,7 @@ const MainDrawer = (props) => {
     const theme = useTheme();
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const [component, setComponent] = useState('Dashboard');
-    const [checked, setChecked] = useState(false);
 
-    const toggleChecked = () => {
-        setChecked(!checked);
-    };
     const DrawerContent = [
         {
             title: 'Dashboard',
@@ -133,15 +120,6 @@ const MainDrawer = (props) => {
                     <Typography variant='h6' noWrap>
                         Order Book
                     </Typography>
-
-                    <FormGroup>
-                        <FormControlLabel
-                            control={
-                                <Switch size='small' checked={checked} onChange={toggleChecked} />
-                            }
-                            label='Theme'
-                        />
-                    </FormGroup>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label='mailbox folders'>
