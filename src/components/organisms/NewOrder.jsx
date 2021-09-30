@@ -1,4 +1,4 @@
-import { Box, Card, makeStyles, Typography } from '@material-ui/core';
+import { Box, Button, Card, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import OrderDetails from '../molecules/New-order/OrderDetails';
 import PartsDetails from '../molecules/New-order/PartsDetails';
@@ -19,6 +19,10 @@ const useStyles = makeStyles({
 });
 const NewOrder = () => {
     const classes = useStyles();
+    const handleGenerateOrder = () => {
+        console.log('Generate Order');
+    };
+
     return (
         <Box>
             <Box>
@@ -34,6 +38,16 @@ const NewOrder = () => {
                 <Card style={{ padding: 15 }}>
                     <PartsDetails />
                 </Card>
+            </Box>
+            <Box style={{ marginTop: 15, width: '100%' }}>
+                <Button
+                    variant='contained'
+                    color='primary'
+                    style={{ marginTop: 20, fontWeight: 'bold', fontSize: 16 }}
+                    onClick={handleGenerateOrder}
+                >
+                    Generate Order
+                </Button>
             </Box>
         </Box>
     );

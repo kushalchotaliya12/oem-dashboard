@@ -12,7 +12,7 @@ const PartsDetails = () => {
                 return <PartAccordion index={index} />;
             })}
             <Button
-                variant='contained'
+                variant='outlined'
                 color='primary'
                 style={{ marginTop: 20, fontWeight: 'bold' }}
                 startIcon={<AddIcon />}
