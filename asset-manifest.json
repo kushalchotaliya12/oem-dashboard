@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/kushalchotaliya12/oem-dashboard/static/css/main.a617e044.chunk.css",
-    "main.js": "/kushalchotaliya12/oem-dashboard/static/js/main.63e8ad0f.chunk.js",
-    "main.js.map": "/kushalchotaliya12/oem-dashboard/static/js/main.63e8ad0f.chunk.js.map",
-    "runtime-main.js": "/kushalchotaliya12/oem-dashboard/static/js/runtime-main.75a261c7.js",
-    "runtime-main.js.map": "/kushalchotaliya12/oem-dashboard/static/js/runtime-main.75a261c7.js.map",
-    "static/js/2.2ad988ba.chunk.js": "/kushalchotaliya12/oem-dashboard/static/js/2.2ad988ba.chunk.js",
-    "static/js/2.2ad988ba.chunk.js.map": "/kushalchotaliya12/oem-dashboard/static/js/2.2ad988ba.chunk.js.map",
-    "static/js/3.b77f0a7a.chunk.js": "/kushalchotaliya12/oem-dashboard/static/js/3.b77f0a7a.chunk.js",
-    "static/js/3.b77f0a7a.chunk.js.map": "/kushalchotaliya12/oem-dashboard/static/js/3.b77f0a7a.chunk.js.map",
-    "index.html": "/kushalchotaliya12/oem-dashboard/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/kushalchotaliya12/oem-dashboard/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.2ad988ba.chunk.js.LICENSE.txt": "/kushalchotaliya12/oem-dashboard/static/js/2.2ad988ba.chunk.js.LICENSE.txt"
+    "main.css": "/oem-dashboard/static/css/main.a617e044.chunk.css",
+    "main.js": "/oem-dashboard/static/js/main.63e8ad0f.chunk.js",
+    "main.js.map": "/oem-dashboard/static/js/main.63e8ad0f.chunk.js.map",
+    "runtime-main.js": "/oem-dashboard/static/js/runtime-main.d5eb516d.js",
+    "runtime-main.js.map": "/oem-dashboard/static/js/runtime-main.d5eb516d.js.map",
+    "static/js/2.2ad988ba.chunk.js": "/oem-dashboard/static/js/2.2ad988ba.chunk.js",
+    "static/js/2.2ad988ba.chunk.js.map": "/oem-dashboard/static/js/2.2ad988ba.chunk.js.map",
+    "static/js/3.b77f0a7a.chunk.js": "/oem-dashboard/static/js/3.b77f0a7a.chunk.js",
+    "static/js/3.b77f0a7a.chunk.js.map": "/oem-dashboard/static/js/3.b77f0a7a.chunk.js.map",
+    "index.html": "/oem-dashboard/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/oem-dashboard/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.2ad988ba.chunk.js.LICENSE.txt": "/oem-dashboard/static/js/2.2ad988ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.75a261c7.js",
+    "static/js/runtime-main.d5eb516d.js",
     "static/js/2.2ad988ba.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.63e8ad0f.chunk.js"
